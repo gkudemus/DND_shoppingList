@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+Assignment: Design a page with the functionality listed below, stylize the
+elements/components based on the aesthetics/themes that you can interpret from the
+screenshots of our application at www.revnue.com
+Description: create a shopping list which allows users to add items, define the quantities, sort
+(drag and drop) the items, and save the list.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Requirements:
+1. Use React JS
+2. Use any React library that allows you to drag and drop items.
+For example: react-sortable-hoc library / REACT DND
+3. Field validation on save:
+1. List Name and Type are required
+2. You cannot save the list if there are any rows with empty fields for Item Name
+or Quantity
 
-## Available Scripts
+4. Type dropdown field options are: Grocery, Home Goods, and Hardware
+5. Pressing "Add an item" creates a new row
+6. Each row has the following:
+● Text input field for the item name
+● Dropdown field for quantity which has the numbers 1 to 12 as options
+7. Each row can be deleted via the delete icon
+8. Each row is sortable using the React JS library
+9. Successful validation should show a popup modal saying "Shopping List Saved!"
+    
+preview:
+![image](https://github.com/gkudemus/DND_shoppingList/assets/6787094/a3c5cb41-dcb7-41a0-91be-7dee1beb946f)
 
-In the project directory, you can run:
+validation:
 
-### `npm start`
+Missing List Name and Type fields
+![image](https://github.com/gkudemus/DND_shoppingList/assets/6787094/f1c34baf-95be-43c3-b0e7-907faf19b0e1)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Missing Item name and quantity
+![image](https://github.com/gkudemus/DND_shoppingList/assets/6787094/5cd50c3b-368e-4101-ab7d-9448a50ba22f)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+confirmation:
+![image](https://github.com/gkudemus/DND_shoppingList/assets/6787094/8dda4485-c3f5-449b-a17a-38a31a7cd36d)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
