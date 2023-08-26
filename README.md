@@ -21,6 +21,8 @@ or Quantity
 7. Each row can be deleted via the delete icon
 8. Each row is sortable using the React JS library
 9. Successful validation should show a popup modal saying "Shopping List Saved!"
+
+video recording: https://watch.screencastify.com/v/iDNM1cDxZ4Npqk3jxeOg
     
 preview:
 ![image](https://github.com/gkudemus/DND_shoppingList/assets/6787094/a3c5cb41-dcb7-41a0-91be-7dee1beb946f)
