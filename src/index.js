@@ -1,14 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#007bff",
+    },
+    secondary: {
+      main: "#d3d3d3",
+    },
+  },
+});
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <DndProvider backend={HTML5Backend}>
+    <React.StrictMode>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </React.StrictMode>
+  </DndProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
